@@ -1,0 +1,367 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color:  black;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #333333;
+}
+
+.header {
+  background: url('../img/offer-img.png');
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  text-transform: uppercase;
+  color:  #fff;
+  align-items: center;
+  padding-top: 21px;
+}
+
+.nav a {
+  color: #fff;
+  padding-left: 63px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+.number {
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 221px;
+  
+}
+
+.offer-img {
+  margin-top: 191px;
+}
+
+.offer {
+   margin-top: 308px;
+
+}
+
+.offer-title {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.offer-intro {
+  width: 540px;
+  color: #fff;
+}
+
+.offer-btn {
+  padding: 15px 12px;
+  width: 160px;
+  display: flex;
+  background-color: #D1A954;
+  text-transform: uppercase;
+  justify-content: center;
+  color:  #fff;
+  font-weight: 700;
+  margin-top: 49px;
+}
+
+.teater-info {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.info-title {
+  text-transform: uppercase;
+  font-size:  48px;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.info-o {
+  color: #D1A954;
+}
+
+.best-teater {
+  color:  #fff;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+
+.best-info {
+  width: 445px;
+  color: #fff;
+}
+
+.teaters {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.info2-teater {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 21px;
+  padding-bottom: 40px;
+  font-weight: 700;
+}
+
+.info2-intro {
+  background: url('../img/armchair 1.png') no-repeat top left;
+  padding-top: 90px;
+  font-weight: 700;
+  padding-bottom: 27px;
+}
+
+.mesta {
+  color: #D1A954;
+  font-weight: 700;
+}
+
+.history {
+  background: url('../img/theater 1.png') no-repeat top left;
+}
+
+.teater-img {
+  margin-left: 30px;
+}
+
+.productions {
+  padding-bottom: 150px;
+}
+
+.production-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.production-title-span {
+  color: #D1A954;
+}
+
+.production-img {
+  margin-bottom: 150px;
+}
+
+.partners {
+  padding-bottom: 120px;
+}
+
+.partners-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 163px;
+}
+
+.partners-title-span {
+  color: #D1A954;
+}
+
+.partners-imgs {
+  display: block;
+  margin: 0 auto;
+}
+
+.patron {
+  padding-bottom: 80px;
+}
+
+.patron-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+.patron-title-span {
+  color: #D1A954;
+}
+
+.patrion-all {
+  display: flex;
+  
+}
+
+.adres {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+
+.adres1 {
+  padding-bottom: 25px;
+}
+
+.register {
+  margin-left: 249px;
+}
+
+.registration {
+  display: flex;
+}
+
+.registration2 {
+  display: flex;
+}
+
+.input1 {
+  background-color: #444444;
+  border: none;
+  width: 180px;
+  height: 35px;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #616161;
+  display: flex;
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+.input-phone {
+  display: block;
+}
+
+.form-btn {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #D1A954;
+
+  border: none;
+  display: block;
+  margin-left: 30px;
+  width: 190px;
+  height: 50px;
+}
+
+.patron-last {
+  display: flex;
+}
+
+.patron-text {
+  color:  #989898;
+  width: 390px;
+  margin-left: 565px;
+  font-size: 12px;
+}
+
+.hr {
+  color: #565656;
+  background-color: #565656;
+  height: 1px;
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.footer {
+
+}
+
+.footer-text {
+  color: #989898;
+  font-size: 12px;
+  padding: 30px;
+  text-align: center;
+}
